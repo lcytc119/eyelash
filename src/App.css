@@ -1,10 +1,10 @@
 .header {
   position: fixed; /* Fixed position */
-  top: 0px;
+  top: 0;
   left: 0;          
   width: 100%;     /* Full width */
-  height: 60px;
-  background-color: red; /* Background color */
+  height: 150px;
+  background-color: rgb(254,252,237); /* Background color */
   display: flex;
   align-items: center; /* Align text to the left */
   justify-content: space-around;
@@ -14,6 +14,7 @@
 
 .logo {
   position: relative;
+  left: 130px;
   width: auto;
   height: 100%;
 }
@@ -22,11 +23,23 @@
   height:100%
 }
 
-.header button {
+.header a {
   margin: 10px; /* Spacing around buttons */
   padding: 10px; /* Padding inside buttons */
 
 }
+.submenu {
+  display: none; /* Initially hidden */
+  position: absolute; /* Adjust as per your layout */
+  /* Add more styles for submenu */
+}
 
+.category div:hover .submenu {
+  display: block; /* Show on hover */
+}
+
+.book button{
+  color: darkgreen;
+}
 
 
